@@ -17,10 +17,42 @@ owner: '',
 convert: '',
 search: '',
 }; 
-}
 
+‎for (let i=0; i < commands.length; i++) {
+‎if (commands[i].pattern && !commands[i]. dontAddCommandlist){
+menu [commands[i].category] += `.${commands[i].pattern}\n` 
+}   
+}
+let madeMemu = `👋*hello ${pushname}*
+> *DOWNLOAD COMMANDS* ✅
+
+${menu.download}
+
+> *MAIN COMMANDS* ✴️
+
+${menu.main}
+
+> *GROUP COMMANDS* ⏭️
+
+${menu.group}
+
+> *OWNER COMMANDS* 🔥
+
+${menu.owner}
+
+> *CONVERT COMMANDS* 💫
+
+${menu.convert}
+
+> *SEARCH COMMANDS* 🔎
+
+${menu.search}
+
+POWERD BY IRFAN 💜
+`
+await conn.SendMessage(from,{text:madeMenu},{quoted:mek})
+    
 }catch(e){
 console.log(e)
 reply(`${e}`) 
 }
-  
