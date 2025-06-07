@@ -50,8 +50,8 @@ ${menu.search}
 
 POWERD BY IRFAN 💜
 `
-await conn.SendMessage(from,{text:madeMenu},{quoted:mek})
-    
+await conn.SendMessage(from,{image:{url:"https://files.catbox.moe/gs054b"},caption:madeMenu},{quoted:mek})
+
 }catch(e){
 console.log(e)
 reply(`${e}`) 
